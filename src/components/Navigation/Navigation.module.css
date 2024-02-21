@@ -1,0 +1,44 @@
+.navbar {
+  background-color: var(--secondary-clr);
+  padding: 10px;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navItems {
+  margin-right: 15px;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandName {
+  color: var(--white-clr);
+  padding-left: 5px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.logoIcon {
+  font-size: 40px;
+  color: var(--white-clr);
+}
+.navLinks{
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.navItems a {
+  color: var(--white-clr);
+  text-decoration: none;
+}

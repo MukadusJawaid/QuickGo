@@ -6,13 +6,13 @@ import classes from "./PackageCard.module.css";
 
 function PackageCard() {
   return (
-    <div className={classes.div}>
-      <Container>
+    <div>
+      <Container className={classes.container}>
         <h1 className="h1">Our Packages</h1>
         <section className={classes.section}>
-          <Row>
+          <Row className={"g-4"}>
             {packagesData.map((packageItem, index) => (
-              <Col md={4} key={index}>
+              <Col md={6} lg={4}  key={index}>
                 <div style={{ height: "100%" }}>
                   <Card style={{ width: "25rem", height: "100%"}}>
                     <Card.Img

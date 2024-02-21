@@ -1,0 +1,19 @@
+.container{
+    margin: 30px 0px;
+}
+.imgDiv .img{
+    width: 100%;
+}
+.textDiv{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.textDiv h1{
+    color: var(--secondary-clr);
+}
+.textDiv p{
+    color: var(--paragraph-clr);
+    
+}

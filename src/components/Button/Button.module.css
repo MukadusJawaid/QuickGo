@@ -1,0 +1,14 @@
+.Button{
+    border: none !important;
+    border-radius: 25px;
+}
+.Button[variant ="secondary"]{
+    background-color: var(--secondary-clr);
+    color: var(--white-clr);
+}
+.Button[variant ="outline"]{
+    border: 2px solid var(--secondary-clr) !important;
+    background-color: transparent;
+    color: var(--secondary-clr);
+
+}

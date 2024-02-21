@@ -1,0 +1,48 @@
+
+.section{
+    margin-top: 50px;
+    height: 80vh;
+
+}
+.bgImage{
+    width: 100%;
+}
+.leftContainer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.leftContainer .text{
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+}
+.imageAndText {
+    display: flex;
+   
+}
+.text h1{
+    color: var(--secondary-clr);
+}
+.text p{
+    color: var(--paragraph-clr);
+}
+.text .mapImage{
+    width: 200px;
+}
+.imageAndText .rightContainer .image{
+    width: 900px;
+    margin-left: 0;
+}
+
+.Button{
+    display: flex;
+    gap: 10px;
+
+}
+.button {
+    padding: 10px 25px;
+}

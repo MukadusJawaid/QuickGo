@@ -1,10 +1,23 @@
 :root {
   --secondary-clr: #e8505b;
   --primary-clr: #fee6e6;
-
+  --paragraph-clr: gray;
+  --card-paragraph-clr: rgb(75, 75, 75);
   --white-clr: #fff;
 }
 /* typography */
+h1{
+  font-family: "Viga", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 58px !important;
+}
+.h4{
+  font-family: "Viga", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px!important;
+}
 .body1 {
   font-family: "Viga", sans-serif;
   font-weight: 400;
@@ -16,4 +29,17 @@
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+}
+
+.body3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+.body4{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 }

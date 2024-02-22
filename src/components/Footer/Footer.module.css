@@ -1,0 +1,18 @@
+.footer{
+    margin-top: 50px;
+    padding: 30px 0px;
+    background-color: var(--secondary-clr);
+    color: var(--white-clr)!important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.socialIcons{
+    display: flex;
+    gap: 30px;
+}
+.socialIcons a{
+    color: var(--white-clr)!important;
+}

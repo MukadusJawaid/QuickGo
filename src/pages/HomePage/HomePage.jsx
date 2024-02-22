@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import classes from "./HomePage.module.css";
 import Navbar from "../../components/Navigation/Navigation";
-import HeroSection from '../../components/HeroSection/HeroSection'
+import HeroSection from "../../components/HeroSection/HeroSection";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import PackageCard from "../../components/PackageCard/PackageCard";
-import ContactUs from "../ContactUs/ContactUs";
+import ContactUs from "../../components/ContactUs/ContactUs";
+import Footer from "../../components/Footer/Footer";
 
 export default function HomePage() {
   return (
@@ -13,12 +14,13 @@ export default function HomePage() {
       <Navbar />
       <Container className={classes.container}>
         <Row>
-            <HeroSection/>
-            <PackageCard/>
-            <AboutUs/>
-            <ContactUs/>
+          <HeroSection />
+          <PackageCard />
+          <AboutUs />
+          <ContactUs />
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }

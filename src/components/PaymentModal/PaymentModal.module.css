@@ -1,0 +1,9 @@
+.paymentText
+{
+    color: var(--secondary-clr) !important;
+}
+
+.button{
+    padding: 10px 13px;
+    border-radius: 10px!important;
+}

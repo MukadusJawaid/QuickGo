@@ -25,7 +25,7 @@
     color: var(--paragraph-clr);
 }
 .text .mapImage{
-    width: 100px;
+    width: 130px;
 }
 .imageAndText .rightContainer .image{
     width: 900px;
@@ -38,5 +38,6 @@
 
 }
 .button {
-    padding: 10px 25px;
+    padding: 10px;
+    width: 180px;
 }

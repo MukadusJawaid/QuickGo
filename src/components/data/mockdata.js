@@ -11,6 +11,7 @@ export const heroSectionData = [
     description:
       "<p>lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet</p><p>lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>",
     buttonText: "View Packages",
+    buttonTextTwo: "About",
     image: img1,
   },
 ];

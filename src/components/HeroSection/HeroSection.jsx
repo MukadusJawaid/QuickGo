@@ -24,8 +24,8 @@ export default function HeroSection() {
                     <Button variant={"outline"} className={["body2",classes.button].join(" ")}>
                       {heroSectionData[0].buttonText}
                     </Button>
-                    <Button variant={"secondary"} className={["body2",classes.button].join(" ")}>
-                      {heroSectionData[0].buttonText}
+                    <Button variant={"secondary"} className={["body2", classes.button].join(" ")}>
+                      {heroSectionData[0].buttonTextTwo}
                     </Button>
                   </div>
                 </div>

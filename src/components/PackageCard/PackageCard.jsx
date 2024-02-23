@@ -25,7 +25,7 @@ function PackageCard() {
             {packagesData.map((packageItem, index) => (
               <Col md={6} lg={4} key={index}>
                 <div style={{ height: '100%' }}>
-                  <Card style={{ width: '25rem', height: '100%' }}>
+                  <Card className={classes.card}>
                     <Card.Img variant="top" src={packageItem.img} className={classes.package} />
                     <Card.Body>
                       <Card.Title className={['h4', classes.title].join(' ')}>

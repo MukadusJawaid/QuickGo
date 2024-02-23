@@ -16,7 +16,7 @@ export default function HeroSection() {
               <div className={classes.leftContainer} >
                 <div className={classes.text}>
                   <img className={classes.mapImage} src={img} alt="map"/>
-                  <h1 className={"h1"}>{heroSectionData[0].title}</h1>
+                  <h1 className={"h2"}>{heroSectionData[0].title}</h1>
                   <p className={"body2"}>
                     {HTMLReactParser(heroSectionData[0].description)}
                   </p>

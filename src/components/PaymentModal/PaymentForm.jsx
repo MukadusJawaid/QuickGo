@@ -1,13 +1,13 @@
-import React from 'react';
-import { Form } from 'react-bootstrap'; // Import Form from react-bootstrap
+// PaymentForm.jsx
+import React, { useState } from 'react';
+import { Button, Form } from 'react-bootstrap';
 import { useStripe, useElements } from '@stripe/react-stripe-js';
 import { CardElement } from '@stripe/react-stripe-js';
-import Button from '../Button/Button';
-import classes from './PaymentModal.module.css';
 
-const PaymentForm = ({ product, onClose, onPaymentSuccess }) => {
+const PaymentForm = ({ product }) => {
   const stripe = useStripe();
   const elements = useElements();
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -22,7 +22,7 @@ const PaymentForm = ({ product, onClose, onPaymentSuccess }) => {
       type: 'card',
       card: cardElement,
       billing_details: {
-        name: event.target.name.value, 
+        name: event.target.name.value,
       },
     });
 
@@ -30,13 +30,16 @@ const PaymentForm = ({ product, onClose, onPaymentSuccess }) => {
       console.error(result.error.message);
     } else {
       console.log('Payment successful');
-      onPaymentSuccess(); 
-      onClose(); 
+      setPaymentSuccess(true);
     }
   };
+  var Router = require('react-router');
+  if (paymentSuccess) {
+   Router.browserHistory.push('/form')
+  }
 
   return (
-    <Form onSubmit={handleSubmit}> 
+    <Form onSubmit={handleSubmit}>
       <Form.Group controlId="name" className="mb-4">
         <Form.Label>Cardholder's Name</Form.Label>
         <Form.Control type="text" placeholder="Enter cardholder's name" required />
@@ -45,7 +48,7 @@ const PaymentForm = ({ product, onClose, onPaymentSuccess }) => {
         <Form.Label>Card Details</Form.Label>
         <CardElement />
       </Form.Group>
-      <Button className={[classes.button, "body4"].join(" ")} variant='secondary' type="submit" disabled={!stripe}>
+      <Button variant='secondary' type="submit" disabled={!stripe}>
         Confirm Payment (${product.price})
       </Button>
     </Form>

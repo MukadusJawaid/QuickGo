@@ -1,4 +1,6 @@
-
+.section{
+    margin-top: 50px;
+}
 .bgImage{
     width: 100%;
 }
@@ -25,10 +27,10 @@
     color: var(--paragraph-clr);
 }
 .text .mapImage{
-    width: 130px;
+    width: 100px;
 }
 .imageAndText .rightContainer .image{
-    width: 900px;
+    width: 800px;
     margin-left: 0;
 }
 
@@ -38,6 +40,6 @@
 
 }
 .button {
-    padding: 10px;
-    width: 180px;
+    padding: 4px;
+    width: 160px;
 }

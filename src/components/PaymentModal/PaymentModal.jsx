@@ -4,6 +4,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from '@stripe/react-stripe-js';
 import PaymentForm from './PaymentForm';
 import classes from './PaymentModal.module.css';
+
 const stripePromise = loadStripe('YOUR_STRIPE_PUBLIC_KEY');
 
 const PaymentModal = ({ product, onClose }) => {

@@ -1,8 +1,10 @@
 // PaymentForm.jsx
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import { useStripe, useElements } from '@stripe/react-stripe-js';
 import { CardElement } from '@stripe/react-stripe-js';
+import Button from '../Button/Button';
+import classes from './PaymentModal.module.css';
 
 const PaymentForm = ({ product }) => {
   const stripe = useStripe();
@@ -48,7 +50,7 @@ const PaymentForm = ({ product }) => {
         <Form.Label>Card Details</Form.Label>
         <CardElement />
       </Form.Group>
-      <Button variant='secondary' type="submit" disabled={!stripe}>
+      <Button className={classes.button} variant='secondary' type="submit" disabled={!stripe}>
         Confirm Payment (${product.price})
       </Button>
     </Form>

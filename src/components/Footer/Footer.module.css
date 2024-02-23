@@ -1,6 +1,7 @@
 .footer{
     margin-top: 50px;
-    padding: 30px 0px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     background-color: var(--secondary-clr);
     color: var(--white-clr)!important;
     justify-content: center;
@@ -10,8 +11,9 @@
     gap: 20px;
 }
 .socialIcons{
+    font-size: 12px;
     display: flex;
-    gap: 30px;
+    gap: 10px;
 }
 .socialIcons a{
     color: var(--white-clr)!important;

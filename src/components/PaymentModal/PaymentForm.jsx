@@ -1,5 +1,6 @@
 // PaymentForm.jsx
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useStripe, useElements } from '@stripe/react-stripe-js';
 import { CardElement } from '@stripe/react-stripe-js';
@@ -35,10 +36,11 @@ const PaymentForm = ({ product }) => {
       setPaymentSuccess(true);
     }
   };
-  var Router = require('react-router');
-  if (paymentSuccess) {
-   Router.browserHistory.push('/form')
-  }
+  // var Router = require('react-router');
+  // if (paymentSuccess) {
+  //  Router.browserHistory.push('/form')
+  // }
+  // navigate to form page
 
   return (
     <Form onSubmit={handleSubmit}>

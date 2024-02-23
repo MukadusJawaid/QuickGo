@@ -12,6 +12,12 @@ h1{
   font-style: normal;
   font-size: 50px !important;
 }
+.h2{
+  font-family: "Viga", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px!important;
+}
 .h4{
   font-family: "Viga", sans-serif;
   font-weight: 400;

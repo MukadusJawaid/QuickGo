@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Packages from "./pages/PackagesPage/Packages";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
+import FormComponent from "./components/Form/Form";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path="/packages" element={<Packages />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactUsPage />} />
+        <Route path="/form" element={<FormComponent />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
